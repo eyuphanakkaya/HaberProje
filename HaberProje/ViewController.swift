@@ -18,6 +18,10 @@ class ViewController: UIViewController,UITableViewDelegate , UITableViewDataSour
         tableView.delegate = self
         tableView.dataSource = self
         
+        
+        tableView.rowHeight = UITableView.automaticDimension
+        tableView.estimatedRowHeight = UITableView.automaticDimension /*boyutları düzenliyoruz */
+        
         veriAl()
 
         
@@ -48,6 +52,10 @@ class ViewController: UIViewController,UITableViewDelegate , UITableViewDataSour
         cell.titleLabel.text =  newsViewModel.title
         cell.storyLabel.text = newsViewModel.story 
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return UITableView.automaticDimension/*bütün işlemler otomatik olucak */
     }
 
 
