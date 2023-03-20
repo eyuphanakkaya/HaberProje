@@ -13,6 +13,10 @@
 		A47CB9DE29C82F66009CEB2F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A47CB9DC29C82F66009CEB2F /* Main.storyboard */; };
 		A47CB9E029C82F67009CEB2F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A47CB9DF29C82F67009CEB2F /* Assets.xcassets */; };
 		A47CB9E329C82F67009CEB2F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A47CB9E129C82F67009CEB2F /* LaunchScreen.storyboard */; };
+		A47CB9EB29C83011009CEB2F /* NewsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47CB9EA29C83011009CEB2F /* NewsCell.swift */; };
+		A47CB9F129C83552009CEB2F /* News.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47CB9F029C83552009CEB2F /* News.swift */; };
+		A47CB9F329C8449B009CEB2F /* Webservice.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47CB9F229C8449B009CEB2F /* Webservice.swift */; };
+		A47CB9F529C85787009CEB2F /* NewsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47CB9F429C85787009CEB2F /* NewsViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		A47CB9DF29C82F67009CEB2F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A47CB9E229C82F67009CEB2F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A47CB9E429C82F67009CEB2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A47CB9EA29C83011009CEB2F /* NewsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsCell.swift; sourceTree = "<group>"; };
+		A47CB9F029C83552009CEB2F /* News.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = News.swift; sourceTree = "<group>"; };
+		A47CB9F229C8449B009CEB2F /* Webservice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Webservice.swift; sourceTree = "<group>"; };
+		A47CB9F429C85787009CEB2F /* NewsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +64,51 @@
 		A47CB9D529C82F66009CEB2F /* HaberProje */ = {
 			isa = PBXGroup;
 			children = (
+				A47CB9EF29C8353F009CEB2F /* Server */,
+				A47CB9EE29C83536009CEB2F /* ViewModel */,
+				A47CB9ED29C8352C009CEB2F /* View */,
+				A47CB9EC29C83525009CEB2F /* Model */,
 				A47CB9D629C82F66009CEB2F /* AppDelegate.swift */,
 				A47CB9D829C82F66009CEB2F /* SceneDelegate.swift */,
 				A47CB9DA29C82F66009CEB2F /* ViewController.swift */,
+				A47CB9EA29C83011009CEB2F /* NewsCell.swift */,
 				A47CB9DC29C82F66009CEB2F /* Main.storyboard */,
 				A47CB9DF29C82F67009CEB2F /* Assets.xcassets */,
 				A47CB9E129C82F67009CEB2F /* LaunchScreen.storyboard */,
 				A47CB9E429C82F67009CEB2F /* Info.plist */,
 			);
 			path = HaberProje;
+			sourceTree = "<group>";
+		};
+		A47CB9EC29C83525009CEB2F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A47CB9F029C83552009CEB2F /* News.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A47CB9ED29C8352C009CEB2F /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A47CB9EE29C83536009CEB2F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				A47CB9F429C85787009CEB2F /* NewsViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		A47CB9EF29C8353F009CEB2F /* Server */ = {
+			isa = PBXGroup;
+			children = (
+				A47CB9F229C8449B009CEB2F /* Webservice.swift */,
+			);
+			path = Server;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,6 +184,10 @@
 			files = (
 				A47CB9DB29C82F66009CEB2F /* ViewController.swift in Sources */,
 				A47CB9D729C82F66009CEB2F /* AppDelegate.swift in Sources */,
+				A47CB9F329C8449B009CEB2F /* Webservice.swift in Sources */,
+				A47CB9EB29C83011009CEB2F /* NewsCell.swift in Sources */,
+				A47CB9F529C85787009CEB2F /* NewsViewModel.swift in Sources */,
+				A47CB9F129C83552009CEB2F /* News.swift in Sources */,
 				A47CB9D929C82F66009CEB2F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
